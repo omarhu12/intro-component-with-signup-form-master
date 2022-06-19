@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/bg-intro-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-color: hsl(0, 100%, 74%);
+  background-position: top left;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height: 1.4;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+#flex {
+  display: flex;
+  gap: 5rem;
+}
+
+#first {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  margin-left: 8rem;
+}
+
+#first h1 {
+  font-size: 2.3rem;
+  width: 20rem;
+}
+
+#first p {
+  width: 31rem;
+}
+
+#vilot {
+  width: 541px;
+  height: 64px;
+  text-align: center;
+  /* padding: 0 auto; */
+  background-color: hsl(248, 32%, 49%);
+  margin-bottom: 1.5rem;
+  border-radius: 7px;
+}
+
+#vilot p {
+  padding: 1.2rem;
+}
+#vilot span {
+  /* padding: 1.2rem; */
+  color: white;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+#vilot p strong {
+  /* opacity: 1; */
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 542px;
+  height: 570px;
+  background-color: white;
+  border-radius: 7px;
+  padding-top: 1.5rem;
+  margin-right: 9rem;
+}
+
+input {
+  width: 463px;
+  height: 57px;
+  padding: 1.7rem;
+  border-radius: 7px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+
+button {
+  width: 464px;
+  height: 55px;
+  margin: 0 auto;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid hsl(154, 59%, 51%);
+  border-radius: 5px;
+  font-weight: 500;
+  font: inherit;
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#btn {
+  width: 100%;
+  font-size: 0.6rem;
+  margin: 0.7rem auto;
+  text-align: center;
+  opacity: 0.5;
+  font-weight: 400;
+}
+
+#btn strong {
+  opacity: 1;
+  color: hsl(0, 100%, 50%);
+}
+
+img {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 25%;
+  right: 3%;
+  display: none;
+}
+.form-control {
+  margin: 1rem auto;
+  position: relative;
+}
+p.erro {
+  margin-left: 60%;
+  font-size: 0.8rem;
+  display: none;
+  color: red;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+.form-control.error p.erro {
+  display: block;
+}
+
+.form-control.error img {
+  display: block;
+}
+
+@media (max-width: 1160px) {
+  #flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+    height: 448px;
+    background-color: white;
+    border-radius: 7px;
+    padding-top: 1rem;
+    margin: 2rem auto;
+  }
+
+  input {
+    width: 278px;
+    height: 55px;
+    padding: 0.5rem;
+    border-radius: 7px;
+    border: 1px solid hsl(246, 25%, 77%);
+  }
+
+  #vilot {
+    width: 328px;
+    height: 90px;
+    text-align: center;
+    margin: 0 auto;
+    /* padding: 0 auto; */
+    background-color: hsl(248, 32%, 49%);
+    margin-bottom: 1.5rem;
+    border-radius: 7px;
+  }
+
+  #vilot p {
+    width: 15rem;
+    margin: 0 auto;
+    padding: 1.2rem;
+  }
+
+  button {
+    width: 280px;
+    height: 57px;
+    margin: 0 auto;
+    margin-top: 1.2rem;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border: 1px solid hsl(154, 59%, 51%);
+    border-radius: 5px;
+    font-weight: 500;
+    font: inherit;
+  }
+
+  #btn {
+    width: 65%;
+    font-size: 0.6rem;
+    margin: 0.7rem auto;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 400;
+  }
+
+  #first {
+    padding: 0;
+    margin: 0 auto;
+    margin-left: 1.3rem;
+  }
+  #first h1 {
+    font-size: 1.6rem;
+    width: 20rem;
+    margin-left: 4rem;
+    margin: 1rem auto;
+  }
+
+  #first p {
+    width: 22rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+  img {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 17%;
+    right: 3%;
+    display: none;
+  }
+  .form-control {
+    margin: 1rem auto;
+    position: relative;
+  }
+  p.erro {
+    position: absolute;
+    top: 110%;
+    right: 1%;
+    width: 14rem;
+    margin-left: 60%;
+    font-size: 0.9rem;
+    display: none;
+    color: red;
+    opacity: 0.6;
+    font-weight: 500;
+  }
+}
